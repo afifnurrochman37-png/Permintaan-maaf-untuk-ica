@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Permintaan Maaf Untuk Ica</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffb6c1, #ffd1dc);
+  font-family: 'Comic Sans MS', cursive;
+  overflow: hidden;
+  position: relative;
+}
+
+/* background kucing */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("kucing.jpg");
+  background-repeat: repeat;
+  background-size: 150px;
+  opacity: 0.25;
+  z-index: 0;
+}
+
+/* planet emoji */
+.planet {
+  position: absolute;
+  font-size: 36px;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 1;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #ff69b4;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#love {
+  display: none;
+  margin-top: 10px;
+  color: #ff69b4;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🌍🪐 PLANET BANYAK -->
+<div class="planet" style="top:5%; left:5%">🪐</div>
+<div class="planet" style="top:10%; left:30%">🌍</div>
+<div class="planet" style="top:15%; right:10%">🌕</div>
+<div class="planet" style="top:25%; left:60%">🪐</div>
+<div class="planet" style="top:35%; right:30%">🌍</div>
+<div class="planet" style="top:45%; left:10%">🌕</div>
+<div class="planet" style="top:55%; right:5%">🪐</div>
+<div class="planet" style="top:65%; left:40%">🌍</div>
+<div class="planet" style="top:75%; right:20%">🌕</div>
+<div class="planet" style="top:85%; left:15%">🪐</div>
+
+<div class="planet" style="bottom:5%; right:5%">🌍</div>
+<div class="planet" style="bottom:15%; left:25%">🌕</div>
+<div class="planet" style="bottom:25%; right:35%">🪐</div>
+<div class="planet" style="bottom:35%; left:55%">🌍</div>
+<div class="planet" style="bottom:45%; right:55%">🌕</div>
+<div class="planet" style="bottom:55%; left:75%">🪐</div>
+<div class="planet" style="bottom:65%; right:75%">🌍</div>
+<div class="planet" style="bottom:75%; left:85%">🌕</div>
+
+<div class="container">
+  <div class="card">
+    <div style="font-size:60px">🥺🤍🤍</div>
+    <h1>Maaf Ya...</h1>
+    <p>
+      Aku minta maaf ya ca :>
+      karena aku tidak peka malah bikin kamu gamood, terus malah bikin kamu jadi malas sksksksksk.
+      maaf banget yaa, semoga ini bisa bantu mood kamu kembali lagi hehe dan jangan lupa ceritain buku yang kamu baca plss
+      aku kepo banget^-^
+    </p>
+
+    <button onclick="document.getElementById('love').style.display='block'">
+      Kalau setuju pencet ini 💌
+    </button>
+
+    <div id="love">
+      Makasih yaaa icaaa udah mau maafin aku yang ga peka ini jujur aku sangat kepo dengan buku yang kamu baca itu 😆🙇🙇🙇
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
